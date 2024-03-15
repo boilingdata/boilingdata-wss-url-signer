@@ -14,7 +14,7 @@ Connected (press CTRL+C to quit)
 
 The [Mosaic duckdb-server](https://uwdata.github.io/mosaic/duckdb/) supports WebSocket connections with simple API.
 
-You can use the generated signed WebSocket URL with Mosaic to run duckdb-server compatible queries cloud side on BoilingData.
+You can use the generated signed WebSocket URL with Mosaic "clients" for using BoilingData instead of a local duckdb-server.
 
 ```shell
 > {"sql":"SELECT 1;","type":"json"}
