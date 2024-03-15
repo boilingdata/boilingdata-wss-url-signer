@@ -20,3 +20,5 @@ You can use the generated signed WebSocket URL with Mosaic to run duckdb-server 
 > {"sql":"SELECT 1;","type":"json"}
 < [{"1":1}]
 ```
+
+> Since there is no requestId (or similar) key to map requests and responses, only one request should be sent at a time. Also, as there is no batch fragment identifiers, multiple received messages should be assumed to belong to the same response set.
